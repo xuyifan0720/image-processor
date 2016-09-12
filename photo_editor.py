@@ -82,6 +82,9 @@ class PhotoEditor:
 
     def adjust(self):
         result = self.img
+        his_img = cv2.cvtColor(result,cv2.COLOR_BGR2YCR_CB)
+        his_img[:,:,1] = cv2.equalizeHist(his_img[:,:,1])
+        result = cv2.cvtColor(his_img,cv2.COLOR_YCR_CB2BGR)
         for i in range(0,5):
             currentBright = self.calcBrightness(result)
             print("currentBright")
@@ -106,9 +109,6 @@ class PhotoEditor:
         mask = self.maskCreation(self.img)
         print("mask creation done")
         result = self.pimpleRemoval(mask,result)
-        img_yuv = cv2.cvtColor(result, cv2.COLOR_BGR2YUV)
-        img_yuv[:,:,0] = cv2.equalizeHist(img_yuv[:,:,0])
-        result = cv2.cvtColor(img_yuv, cv2.COLOR_YUV2BGR)
         self.saveImg(result)
 
     def saturation_adjust(self,img,constant):
