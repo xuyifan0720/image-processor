@@ -106,7 +106,9 @@ class PhotoEditor:
         mask = self.maskCreation(self.img)
         print("mask creation done")
         result = self.pimpleRemoval(mask,result)
-        result = cv2.equalizeHist(result)
+        img_yuv = cv2.cvtColor(result, cv2.COLOR_BGR2YUV)
+        img_yuv[:,:,0] = cv2.equalizeHist(img_yuv[:,:,0])
+        result = cv2.cvtColor(img_yuv, cv2.COLOR_YUV2BGR)
         self.saveImg(result)
 
     def saturation_adjust(self,img,constant):
