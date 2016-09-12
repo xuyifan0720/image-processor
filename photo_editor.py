@@ -8,11 +8,12 @@ import math
 import argparse
 
 class PhotoEditor:
-    def __init__(self, directory_name, destination):
+    def __init__(self, directory_name, destination, brightness):
         self.img = None
         self.imageFile = None
         self.directory = directory_name
         self.destination = destination
+        self.brightness = int(brightness)
         self.index = 1
         self.contrastConstant = 0
 
@@ -85,7 +86,7 @@ class PhotoEditor:
             currentBright = self.calcBrightness(result)
             print("currentBright")
             print(currentBright)
-            targetDiff = 160-currentBright
+            targetDiff = self.brightness-currentBright
             adjust_constant = (targetDiff)*0.01+1
             cv2_im = cv2.cvtColor(result,cv2.COLOR_BGR2RGB)
             pil_im = Image.fromarray(cv2_im)
@@ -147,6 +148,8 @@ if __name__ == "__main__":
                         help="path where you store your source pictures.")
     parser.add_argument('-d', action="store", dest="destination", required=True,
                         help="destination path where you store your updated pictures.")
+    parser.add_argument('-f', action="store", dest="brightness", required=True,
+                        help="desired brightness.")
     args = parser.parse_args()
 
     if not os.path.exists(args.storage):
@@ -156,5 +159,5 @@ if __name__ == "__main__":
     if not os.path.exists(args.destination):
         os.mkdir(args.destination)
 
-    editor = PhotoEditor(args.storage, args.destination)
+    editor = PhotoEditor(args.storage, args.destination,args.brightness)
     editor.loop(editor.adjust)
