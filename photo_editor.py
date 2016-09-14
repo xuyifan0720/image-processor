@@ -75,16 +75,17 @@ class PhotoEditor:
         invGamma = 1.0 / gamma
         table = np.array([((i / 255.0) ** invGamma) * 255
             for i in np.arange(0, 256)]).astype("uint8")
-
-
         # apply gamma correction using the lookup table
         return cv2.LUT(image, table)
 
+    def contrast_adjustment(self,image,constant):
+        table1 = np.array([0.5**(1-constant)*(i/255.0)**constant*255 for i in np.arange(0,128)]).astype("uint8")
+        table2 = np.array([-0.5**(1-constant)*(1-i/255.0)**constant*255+255 for i in np.arange(128,256)]).astype("uint8")
+        table = np.append(table1,table2)
+        return cv2.LUT(image,table)
+
     def adjust(self):
         result = self.img
-        his_img = cv2.cvtColor(result,cv2.COLOR_BGR2YCR_CB)
-        his_img[:,:,1] = cv2.equalizeHist(his_img[:,:,1])
-        result = cv2.cvtColor(his_img,cv2.COLOR_YCR_CB2BGR)
         for i in range(0,5):
             currentBright = self.calcBrightness(result)
             print("currentBright")
@@ -103,20 +104,18 @@ class PhotoEditor:
         print("first round of process done")
         oldBright = self.calcBrightness(self.img)
         newBright = self.calcBrightness(result)
-        constant = (newBright/oldBright)**1.1
+        constant = (newBright/oldBright)
         result = self.saturation_adjust(result,constant)
         print("saturation done")
         mask = self.maskCreation(self.img)
         print("mask creation done")
         result = self.pimpleRemoval(mask,result)
+        result = self.contrast_adjustment(result,constant)
         self.saveImg(result)
 
     def saturation_adjust(self,img,constant):
         hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
-        for x in hsv:
-            for i in range(0,len(x)):
-                point = x[i]
-                point[1]=point[1]*constant
+        hsv[:,:,1] = [x*constant for x in hsv[:,:,1]]
         return cv2.cvtColor(hsv,cv2.COLOR_HSV2BGR)
 
     def calcBrightness(self,img):
