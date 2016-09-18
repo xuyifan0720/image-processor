@@ -8,13 +8,14 @@ import math
 import argparse
 
 class PhotoEditor:
-    def __init__(self, directory_name, destination, brightness):
+    def __init__(self, directory_name, destination, brightness,blur):
         self.img = None
         self.imageFile = None
         self.directory = directory_name
         self.destination = destination
         self.brightness = int(brightness)
         self.index = 1
+        self.blur = blur
         self.contrastConstant = 0
 
     def maskCreation(self, img):
@@ -105,17 +106,23 @@ class PhotoEditor:
         oldBright = self.calcBrightness(self.img)
         newBright = self.calcBrightness(result)
         constant = (newBright/oldBright)
-        result = self.saturation_adjust(result,constant)
+        #result = self.saturation_adjust(result,constant)
         print("saturation done")
         mask = self.maskCreation(self.img)
         print("mask creation done")
-        result = self.pimpleRemoval(mask,result)
+        if self.blur == "yes":
+            result = self.pimpleRemoval(mask,result)
         result = self.contrast_adjustment(result,constant)
         self.saveImg(result)
 
+    def testLimit(self,n):
+        if n > 255:
+            return 255
+        else:
+            return n
     def saturation_adjust(self,img,constant):
         hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
-        hsv[:,:,1] = [x*constant for x in hsv[:,:,1]]
+        hsv[:,:,1] = [self.testLimit(x*constant) for x in hsv[:,:,1]]
         return cv2.cvtColor(hsv,cv2.COLOR_HSV2BGR)
 
     def calcBrightness(self,img):
@@ -152,6 +159,8 @@ if __name__ == "__main__":
                         help="destination path where you store your updated pictures.")
     parser.add_argument('-f', action="store", dest="brightness", required=True,
                         help="desired brightness.")
+    parser.add_argument('-g', action="store", dest="blur", required=False, default = "yes",
+                        help="yes or no whether you want to do blemish adjust.")
     args = parser.parse_args()
 
     if not os.path.exists(args.storage):
@@ -161,5 +170,5 @@ if __name__ == "__main__":
     if not os.path.exists(args.destination):
         os.mkdir(args.destination)
 
-    editor = PhotoEditor(args.storage, args.destination,args.brightness)
+    editor = PhotoEditor(args.storage, args.destination,args.brightness,args.blur)
     editor.loop(editor.adjust)
