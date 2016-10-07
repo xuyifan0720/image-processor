@@ -1,5 +1,5 @@
-import numpy as np
 import cv2
+import numpy as np
 from matplotlib import pyplot as plt
 import os 
 from Tkinter import *

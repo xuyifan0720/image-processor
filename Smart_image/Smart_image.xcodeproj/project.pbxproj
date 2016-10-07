@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F68ED3821D95EED0008BD0FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68ED3811D95EED0008BD0FE /* AppDelegate.swift */; };
+		F68ED3841D95EED0008BD0FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68ED3831D95EED0008BD0FE /* ViewController.swift */; };
+		F68ED3861D95EED0008BD0FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F68ED3851D95EED0008BD0FE /* Assets.xcassets */; };
+		F68ED3891D95EED0008BD0FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F68ED3871D95EED0008BD0FE /* Main.storyboard */; };
+		F68ED3941D95EED0008BD0FE /* Smart_imageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68ED3931D95EED0008BD0FE /* Smart_imageTests.swift */; };
+		F68ED39F1D95EED0008BD0FE /* Smart_imageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68ED39E1D95EED0008BD0FE /* Smart_imageUITests.swift */; };
+		F68ED3AD1D96F090008BD0FE /* photo_editor.py in Resources */ = {isa = PBXBuildFile; fileRef = F68ED3AC1D96F090008BD0FE /* photo_editor.py */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F68ED3901D95EED0008BD0FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F68ED3761D95EED0008BD0FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F68ED37D1D95EED0008BD0FE;
+			remoteInfo = Smart_image;
+		};
+		F68ED39B1D95EED0008BD0FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F68ED3761D95EED0008BD0FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F68ED37D1D95EED0008BD0FE;
+			remoteInfo = Smart_image;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F68ED37E1D95EED0008BD0FE /* Smart_image.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smart_image.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68ED3811D95EED0008BD0FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F68ED3831D95EED0008BD0FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F68ED3851D95EED0008BD0FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F68ED3881D95EED0008BD0FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F68ED38A1D95EED0008BD0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68ED38F1D95EED0008BD0FE /* Smart_imageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Smart_imageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68ED3931D95EED0008BD0FE /* Smart_imageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_imageTests.swift; sourceTree = "<group>"; };
+		F68ED3951D95EED0008BD0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68ED39A1D95EED0008BD0FE /* Smart_imageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Smart_imageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68ED39E1D95EED0008BD0FE /* Smart_imageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_imageUITests.swift; sourceTree = "<group>"; };
+		F68ED3A01D95EED0008BD0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68ED3AC1D96F090008BD0FE /* photo_editor.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = photo_editor.py; path = ../../photo_editor.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F68ED37B1D95EED0008BD0FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68ED38C1D95EED0008BD0FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68ED3971D95EED0008BD0FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F68ED3751D95EED0008BD0FE = {
+			isa = PBXGroup;
+			children = (
+				F68ED3801D95EED0008BD0FE /* Smart_image */,
+				F68ED3921D95EED0008BD0FE /* Smart_imageTests */,
+				F68ED39D1D95EED0008BD0FE /* Smart_imageUITests */,
+				F68ED37F1D95EED0008BD0FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F68ED37F1D95EED0008BD0FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F68ED37E1D95EED0008BD0FE /* Smart_image.app */,
+				F68ED38F1D95EED0008BD0FE /* Smart_imageTests.xctest */,
+				F68ED39A1D95EED0008BD0FE /* Smart_imageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F68ED3801D95EED0008BD0FE /* Smart_image */ = {
+			isa = PBXGroup;
+			children = (
+				F68ED3811D95EED0008BD0FE /* AppDelegate.swift */,
+				F68ED3831D95EED0008BD0FE /* ViewController.swift */,
+				F68ED3851D95EED0008BD0FE /* Assets.xcassets */,
+				F68ED3871D95EED0008BD0FE /* Main.storyboard */,
+				F68ED3AC1D96F090008BD0FE /* photo_editor.py */,
+				F68ED38A1D95EED0008BD0FE /* Info.plist */,
+			);
+			path = Smart_image;
+			sourceTree = "<group>";
+		};
+		F68ED3921D95EED0008BD0FE /* Smart_imageTests */ = {
+			isa = PBXGroup;
+			children = (
+				F68ED3931D95EED0008BD0FE /* Smart_imageTests.swift */,
+				F68ED3951D95EED0008BD0FE /* Info.plist */,
+			);
+			path = Smart_imageTests;
+			sourceTree = "<group>";
+		};
+		F68ED39D1D95EED0008BD0FE /* Smart_imageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F68ED39E1D95EED0008BD0FE /* Smart_imageUITests.swift */,
+				F68ED3A01D95EED0008BD0FE /* Info.plist */,
+			);
+			path = Smart_imageUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F68ED37D1D95EED0008BD0FE /* Smart_image */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F68ED3A31D95EED0008BD0FE /* Build configuration list for PBXNativeTarget "Smart_image" */;
+			buildPhases = (
+				F68ED37A1D95EED0008BD0FE /* Sources */,
+				F68ED37B1D95EED0008BD0FE /* Frameworks */,
+				F68ED37C1D95EED0008BD0FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Smart_image;
+			productName = Smart_image;
+			productReference = F68ED37E1D95EED0008BD0FE /* Smart_image.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F68ED38E1D95EED0008BD0FE /* Smart_imageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F68ED3A61D95EED0008BD0FE /* Build configuration list for PBXNativeTarget "Smart_imageTests" */;
+			buildPhases = (
+				F68ED38B1D95EED0008BD0FE /* Sources */,
+				F68ED38C1D95EED0008BD0FE /* Frameworks */,
+				F68ED38D1D95EED0008BD0FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F68ED3911D95EED0008BD0FE /* PBXTargetDependency */,
+			);
+			name = Smart_imageTests;
+			productName = Smart_imageTests;
+			productReference = F68ED38F1D95EED0008BD0FE /* Smart_imageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F68ED3991D95EED0008BD0FE /* Smart_imageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F68ED3A91D95EED0008BD0FE /* Build configuration list for PBXNativeTarget "Smart_imageUITests" */;
+			buildPhases = (
+				F68ED3961D95EED0008BD0FE /* Sources */,
+				F68ED3971D95EED0008BD0FE /* Frameworks */,
+				F68ED3981D95EED0008BD0FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F68ED39C1D95EED0008BD0FE /* PBXTargetDependency */,
+			);
+			name = Smart_imageUITests;
+			productName = Smart_imageUITests;
+			productReference = F68ED39A1D95EED0008BD0FE /* Smart_imageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F68ED3761D95EED0008BD0FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Yifan Xu";
+				TargetAttributes = {
+					F68ED37D1D95EED0008BD0FE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F68ED38E1D95EED0008BD0FE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F68ED37D1D95EED0008BD0FE;
+					};
+					F68ED3991D95EED0008BD0FE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F68ED37D1D95EED0008BD0FE;
+					};
+				};
+			};
+			buildConfigurationList = F68ED3791D95EED0008BD0FE /* Build configuration list for PBXProject "Smart_image" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F68ED3751D95EED0008BD0FE;
+			productRefGroup = F68ED37F1D95EED0008BD0FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F68ED37D1D95EED0008BD0FE /* Smart_image */,
+				F68ED38E1D95EED0008BD0FE /* Smart_imageTests */,
+				F68ED3991D95EED0008BD0FE /* Smart_imageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F68ED37C1D95EED0008BD0FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68ED3861D95EED0008BD0FE /* Assets.xcassets in Resources */,
+				F68ED3891D95EED0008BD0FE /* Main.storyboard in Resources */,
+				F68ED3AD1D96F090008BD0FE /* photo_editor.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68ED38D1D95EED0008BD0FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68ED3981D95EED0008BD0FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F68ED37A1D95EED0008BD0FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68ED3841D95EED0008BD0FE /* ViewController.swift in Sources */,
+				F68ED3821D95EED0008BD0FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68ED38B1D95EED0008BD0FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68ED3941D95EED0008BD0FE /* Smart_imageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68ED3961D95EED0008BD0FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68ED39F1D95EED0008BD0FE /* Smart_imageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F68ED3911D95EED0008BD0FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F68ED37D1D95EED0008BD0FE /* Smart_image */;
+			targetProxy = F68ED3901D95EED0008BD0FE /* PBXContainerItemProxy */;
+		};
+		F68ED39C1D95EED0008BD0FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F68ED37D1D95EED0008BD0FE /* Smart_image */;
+			targetProxy = F68ED39B1D95EED0008BD0FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F68ED3871D95EED0008BD0FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F68ED3881D95EED0008BD0FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F68ED3A11D95EED0008BD0FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F68ED3A21D95EED0008BD0FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F68ED3A41D95EED0008BD0FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Smart_image/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yifan.Smart-image";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F68ED3A51D95EED0008BD0FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Smart_image/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yifan.Smart-image";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F68ED3A71D95EED0008BD0FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Smart_imageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yifan.Smart-imageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart_image.app/Contents/MacOS/Smart_image";
+			};
+			name = Debug;
+		};
+		F68ED3A81D95EED0008BD0FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Smart_imageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yifan.Smart-imageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart_image.app/Contents/MacOS/Smart_image";
+			};
+			name = Release;
+		};
+		F68ED3AA1D95EED0008BD0FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Smart_imageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yifan.Smart-imageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Smart_image;
+			};
+			name = Debug;
+		};
+		F68ED3AB1D95EED0008BD0FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Smart_imageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yifan.Smart-imageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Smart_image;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F68ED3791D95EED0008BD0FE /* Build configuration list for PBXProject "Smart_image" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68ED3A11D95EED0008BD0FE /* Debug */,
+				F68ED3A21D95EED0008BD0FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F68ED3A31D95EED0008BD0FE /* Build configuration list for PBXNativeTarget "Smart_image" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68ED3A41D95EED0008BD0FE /* Debug */,
+				F68ED3A51D95EED0008BD0FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F68ED3A61D95EED0008BD0FE /* Build configuration list for PBXNativeTarget "Smart_imageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68ED3A71D95EED0008BD0FE /* Debug */,
+				F68ED3A81D95EED0008BD0FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F68ED3A91D95EED0008BD0FE /* Build configuration list for PBXNativeTarget "Smart_imageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68ED3AA1D95EED0008BD0FE /* Debug */,
+				F68ED3AB1D95EED0008BD0FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F68ED3761D95EED0008BD0FE /* Project object */;
+}
